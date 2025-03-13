@@ -46,12 +46,15 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     print("Turno de Squirtle")
 
     ataque_squirtle = None
-    while ataque_squirtle not in ["P", "B", "A", "N"]:
-        ataque_squirtle = input("¿Qué ataque deseas realizar? [P - Pistola Agua | B - Burbuja | A - Placaje | N - Nada]: ")
+    while ataque_squirtle not in ["P", "B", "A", "N", ¨V¨]:
+        ataque_squirtle = input("¿Qué ataque deseas realizar? [P - Pistola Agua | B - Burbuja | A - Placaje | N - Nada | V - Pocion]: ")
 
     if ataque_squirtle == "P":
         print("Squirtle ataca con Pistola Agua")
         vida_pikachu -= 12
+    elif ataque_squirtle == "V":
+        print("Squirtle usa pocion, obtiene 10 puntos de vida")
+        vida_squirtle += 10
     elif ataque_squirtle == "B":
         print("Squirtle ataca con Burbuja")
         vida_pikachu -= 9
